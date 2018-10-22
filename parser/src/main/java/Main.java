@@ -43,6 +43,7 @@ public class Main {
 
 //            Block b = JSON.par
 
+
             JSONObject obj1 = (JSONObject) obj.get("result");
             String nextBlockHash = String.valueOf(obj1.get("nextblockhash"));
 
