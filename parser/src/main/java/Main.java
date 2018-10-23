@@ -42,19 +42,34 @@ public class Main {
             ArrayList<String> TxList = (ArrayList<String>) block.tx();
 
 
-
-            for (String TxHash : TxList) {
-                BitcoindRpcClient.RawTransaction Tx = bitcoin.getRawTransaction(TxHash);
+                //Coinbase Transaction
+                BitcoindRpcClient.RawTransaction Tx = bitcoin.getRawTransaction(TxList.get(0));
 
                 List<BitcoindRpcClient.RawTransaction.Out> out = (List<BitcoindRpcClient.RawTransaction.Out>) Tx.vOut();
                 List<BitcoindRpcClient.RawTransaction.In> in = (List<BitcoindRpcClient.RawTransaction.In>) Tx.vIn();
 
-                //get the input address and its details
-                in=null;
+
+            if(TxList.size()>1) {
+                for (String TxHash : TxList.subList(1, TxList.size())) {
+                    Tx = bitcoin.getRawTransaction(TxHash);
+
+                    out = (List<BitcoindRpcClient.RawTransaction.Out>) Tx.vOut();
+                    in = (List<BitcoindRpcClient.RawTransaction.In>) Tx.vIn();
+
+                    int i=0;
+
+                    while(i<in.size()){
+
+                        System.out.println(in.get(i).txid()+" "+ String.valueOf(in.get(i).vout()));
+//                        in.get(i).vout();
+                        i++;
+                    }
+                    //get the input address and its details
+                    in = null;
 
 
+                }
             }
-
 
 
 
