@@ -1,24 +1,30 @@
+package main;
+
 import config.Config;
-import org.json.simple.JSONArray;
+import databse.connection.DbPool;
 import org.json.simple.JSONObject;
 import wf.bitcoin.javabitcoindrpcclient.BitcoinJSONRPCClient;
-import org.bitcoinj.core.Block;
 import wf.bitcoin.javabitcoindrpcclient.BitcoindRpcClient;
 
-import java.lang.reflect.Array;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.lang.ref.WeakReference;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.sql.Time;
-import java.time.Duration;
-import java.time.Period;
 import java.util.*;
 
 public class Main {
     public static Properties properties;
-
+    public static DbPool dbPool;
     public static void main(String args[]) {
         Config c = new Config();
+
         Main.properties = c.getConfig();
+
+        Main.dbPool= new DbPool(10);
+
 
         int port = Integer.valueOf(Main.properties.getProperty("rpcPort"));
         String server = String.valueOf(Main.properties.getProperty("server"));
@@ -33,25 +39,38 @@ public class Main {
         BitcoinJSONRPCClient RPCclient = new BitcoinJSONRPCClient(url);
 
         //Hash of the first block. Block 0 is not parseable therefore not used here in the system.
-        String blockHash="00000000839a8e6886ab5951d76f411475428afc90947ee320161bbf18eb6048";
+        String blockHash=Main.properties.getProperty("startBlockHash");
 //        String blockHash="0000000000000000011388415eedad7b48c85d96c24522c72195da90d7e1ff59";
 
 
-        int threadCount = 5000;
+        int threadCount = Integer.valueOf(Main.properties.getProperty("threads"));
         ArrayList<BlockParser> parsers = new ArrayList<BlockParser>();
+
+
+
+
+
         //This will sacan the block for always.  just for the while loop.
-        while(port>0) {
+        while(!String.valueOf(Main.properties.getProperty("stopBlockHash")).equals( blockHash)) {
             //1. Block payo
             BitcoindRpcClient.Block block = RPCclient.getBlock(blockHash);
+
+            Properties properties = new Properties();
+            properties.setProperty("lastBlock", blockHash);
+            writeToProp("last.properties",properties);
+
 
             if(parsers.size() >= threadCount){
                 while(!parsers.isEmpty()){
                     try {
-                        parsers.remove(parsers.size()-1).join();
+                        BlockParser p =parsers.remove(parsers.size()-1);
+                        p.join();
+
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                 }
+                Main.gc();
             }
 
             parsers.add(0, new BlockParser(RPCclient, block, blockHash));
@@ -61,7 +80,19 @@ public class Main {
         }
 
     }
+    public static void writeToProp(String fileName, Properties properties){
+        try {
+            File file = new File(fileName);
+            FileOutputStream fileOut = new FileOutputStream(file);
+            properties.store(fileOut, "Last Block Read");
+            fileOut.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
+    }
     public static void printJsonObject(JSONObject jsonObj) {
         for (Object key : jsonObj.keySet()) {
             //based on you key types
@@ -74,6 +105,19 @@ public class Main {
             //for nested objects iteration if required
             if (keyvalue instanceof JSONObject)
                 printJsonObject((JSONObject) keyvalue);
+        }
+    }
+
+    /**
+     * This method guarantees that garbage collection is
+     * done unlike <code>{@link System#gc()}</code>
+     */
+    public static void gc() {
+        Object obj = new Object();
+        WeakReference ref = new WeakReference<Object>(obj);
+        obj = null;
+        while(ref.get() != null) {
+            System.gc();
         }
     }
 

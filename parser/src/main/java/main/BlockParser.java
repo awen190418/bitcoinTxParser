@@ -1,6 +1,9 @@
+package main;
+
 import wf.bitcoin.javabitcoindrpcclient.BitcoinJSONRPCClient;
 import wf.bitcoin.javabitcoindrpcclient.BitcoindRpcClient;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -43,8 +46,10 @@ public class BlockParser extends Thread  {
         if(TxList.size()>1) {
             for (String TxHash : TxList.subList(1, TxList.size())) {
                 Tx = RPCclient.getRawTransaction(TxHash);
-                System.out.println("Transaction No : " + TxList.indexOf(TxHash) );
 
+                if(Main.properties.getProperty("debug").equals("1")) {
+                    System.out.println("Transaction No : " + TxList.indexOf(TxHash));
+                }
                 out = (List<BitcoindRpcClient.RawTransaction.Out>) Tx.vOut();
                 in = (List<BitcoindRpcClient.RawTransaction.In>) Tx.vIn();
 
@@ -76,32 +81,42 @@ public class BlockParser extends Thread  {
 
 
 //                    System.out.println("Input No: " + i);
-                    System.out.println(
-                            "\n\n\n*****************************************************\n"+
-                                    "Transaction Details\n"+
-                                    "*****************************************************\n"+
-                                    "Received TxId: "+soruceTXId+
-                                    " \n"+
-                                    "ID: "+String.valueOf(sourceVoutId)+
-                                    "\n"+
-                                    "Received Date: "+ receivedDate.toString()+
-                                    " \n\n"+
 
-                                    "Spent TxId: "+spentTxId+
-                                    " \n"+
-                                    "ID: "+String.valueOf(spentVinIndex)+
-                                    " \n"+
-                                    "Spent Date: "+ spentDate.toString()+
-                                    "\n\n"+
-                                    "Address: "+bitcoinAddress+
-                                    " \n"+
-                                    "Amount: "+String.valueOf(value) +
-                                    "\n"+
-                                    "Holded Duration: " +diff+
+                    if(Main.properties.get("debug").equals("1")) {
+                        System.out.println(
+                                "\n\n\n*****************************************************\n" +
+                                        "Transaction Details\n" +
+                                        "*****************************************************\n" +
+                                        "Received TxId: " + soruceTXId +
+                                        " \n" +
+                                        "ID: " + String.valueOf(sourceVoutId) +
+                                        "\n" +
+                                        "Received Date: " + receivedDate.toString() +
+                                        " \n\n" +
 
-                                    "\n\n"+
-                                    "*****************************************************"
-                    );
+                                        "Spent TxId: " + spentTxId +
+                                        " \n" +
+                                        "ID: " + String.valueOf(spentVinIndex) +
+                                        " \n" +
+                                        "Spent Date: " + spentDate.toString() +
+                                        "\n\n" +
+                                        "Address: " + bitcoinAddress +
+                                        " \n" +
+                                        "Amount: " + String.valueOf(value) +
+                                        "\n" +
+                                        "Holded Duration: " + diff +
+
+                                        "\n\n" +
+                                        "*****************************************************"
+                        );
+                    }
+//                    public boolean Write(String blockHash, String receivedTxId, int rID, String receivedDate, String spendTxId, String spentTxId, int sID, String spentDate,String address , double value, double holdDuration) throws SQLException {
+
+                    try {
+                        Main.dbPool.getConnection().Write(block.hash(),String.valueOf(block.height()),soruceTXId,Integer.valueOf(sourceVoutId),new java.sql.Date(receivedDate.getTime()),spentTxId,Integer.valueOf(spentVinIndex),new java.sql.Date(spentDate.getTime()),bitcoinAddress,value,diff);
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
                     i++;
                 }
                 //input parsing ends

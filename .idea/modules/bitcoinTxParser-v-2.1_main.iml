@@ -15,12 +15,13 @@
     <orderEntry type="library" name="Gradle: org.bitcoinj:bitcoinj-core:0.14.7" level="project" />
     <orderEntry type="library" name="Gradle: wf.bitcoin:JavaBitcoindRpcClient:0.9.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.7" level="project" />
+    <orderEntry type="library" name="Gradle: mysql:mysql-connector-java:8.0.13" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.10" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.4.10" level="project" />
     <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
     <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.10" level="project" />
     <orderEntry type="library" name="Gradle: com.madgag.spongycastle:core:1.51.0.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.protobuf:protobuf-java:2.6.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.protobuf:protobuf-java:3.6.1" level="project" />
     <orderEntry type="library" name="Gradle: org.bitcoinj:orchid:1.2.1" level="project" />
     <orderEntry type="library" name="Gradle: com.google.guava:guava:18.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.findbugs:jsr305:2.0.1" level="project" />
