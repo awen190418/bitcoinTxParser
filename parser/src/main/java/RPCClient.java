@@ -9,6 +9,7 @@ import org.apache.http.auth.AuthScope;
 import org.apache.http.auth.UsernamePasswordCredentials;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
@@ -39,21 +40,25 @@ public class RPCClient {
             httpclient.getCredentialsProvider().setCredentials(new AuthScope(server, port),
                     new UsernamePasswordCredentials(Main.properties.getProperty("rpcUser"), Main.properties.getProperty("rpcPassword")));
             StringEntity myEntity = new StringEntity(json.toJSONString());
-            System.out.println(json.toString());
+//            System.out.println(json.toString());
 
             String url = "http://"+server+":"+ String.valueOf(port);
 
             HttpPost httppost = new HttpPost(url);
             httppost.setEntity(myEntity);
 
-            System.out.println("executing request" + httppost.getRequestLine());
+
+
+
+
+//            System.out.println("executing request" + httppost.getRequestLine());
             HttpResponse response = httpclient.execute(httppost);
             HttpEntity entity = response.getEntity();
 
-            System.out.println("----------------------------------------");
-            System.out.println(response.getStatusLine());
+//            System.out.println("----------------------------------------");
+//            System.out.println(response.getStatusLine());
             if (entity != null) {
-                System.out.println("Response content length: " + entity.getContentLength());
+//                System.out.println("Response content length: " + entity.getContentLength());
                 // System.out.println(EntityUtils.toString(entity));
             }
             JSONParser parser = new JSONParser();

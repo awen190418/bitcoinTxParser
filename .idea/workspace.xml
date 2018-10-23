@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb5b4327-edd9-4885-914f-d9742115f7bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_18_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_protobuf_protobuf_java_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_lambdaworks_scrypt_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_madgag_spongycastle_core_1_51_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp_okhttp_2_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_jcip_jcip_annotations_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bitcoinj_bitcoinj_core_0_14_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bitcoinj_orchid_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/bitcoinTxParser-v-2.1_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/bitcoinTxParser-v-2.1_main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/bitcoinTxParser-v-2.1_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/bitcoinTxParser-v-2.1_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/parser/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/parser/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/parser/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parser/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/parser/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/src/main/java/RPCClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/parser/src/main/java/RPCClient.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/parser/.gradle/" />
     <ignored path="$PROJECT_DIR$/parser/build/" />
@@ -12,6 +34,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/bitcoinTxParser_v_2_1$Main.ic" NAME="Main Coverage Results" MODIFIED="1540213748523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/parser">
@@ -37,18 +62,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="2" />
+          <entry key="class" value="3" />
           <entry key="gitignore" value="1" />
-          <entry key="gradle" value="2" />
-          <entry key="java" value="4" />
+          <entry key="gradle" value="3" />
+          <entry key="java" value="11" />
           <entry key="properties" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="2" />
-          <entry key="Groovy" value="2" />
-          <entry key="JAVA" value="4" />
+          <entry key="CLASS" value="3" />
+          <entry key="Groovy" value="3" />
+          <entry key="JAVA" value="11" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="2" />
         </counts>
@@ -56,15 +81,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="gradle" value="30" />
-          <entry key="java" value="1898" />
+          <entry key="gradle" value="32" />
+          <entry key="java" value="3262" />
           <entry key="properties" value="107" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="30" />
-          <entry key="JAVA" value="1898" />
+          <entry key="Groovy" value="32" />
+          <entry key="JAVA" value="3262" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="107" />
         </counts>
@@ -77,20 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parser/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="72" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parser/src/main/java/config/Config.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="360">
+              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -98,39 +111,77 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parser/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="44" column="12" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
+            <state relative-caret-position="330">
+              <caret line="49" column="55" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#516#524#0" expanded="true" />
+                <element signature="e#560#568#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/util/HashMap.class">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/wf.bitcoin/JavaBitcoindRpcClient/0.9.0/b495de7b24e309ea2db4d2655498d39a725c092b/JavaBitcoindRpcClient-0.9.0-sources.jar!/wf/bitcoin/javabitcoindrpcclient/BitcoindRpcClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="2251" column="17" selection-start-line="2251" selection-start-column="17" selection-end-line="2251" selection-end-column="17" />
+            <state relative-caret-position="60">
+              <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/15bba08e3a239d54b68209c001f9c911559d2fed/json-simple-1.1.1-sources.jar!/org/json/simple/JSONObject.java">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/wf.bitcoin/JavaBitcoindRpcClient/0.9.0/b495de7b24e309ea2db4d2655498d39a725c092b/JavaBitcoindRpcClient-0.9.0-sources.jar!/wf/bitcoin/javabitcoindrpcclient/BitcoinJSONRPCClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+            <state relative-caret-position="168">
+              <caret line="657" selection-start-line="657" selection-end-line="657" />
+              <folding>
+                <element signature="e#4771#4772#0" expanded="true" />
+                <element signature="e#4814#4815#0" expanded="true" />
+                <element signature="e#10950#10951#0" expanded="true" />
+                <element signature="e#10972#10973#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.properties">
+        <entry file="file://$PROJECT_DIR$/parser/src/main/java/Block.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="468">
+              <caret line="49" column="8" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#329#330#0" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
+                <element signature="e#428#429#0" expanded="true" />
+                <element signature="e#467#468#0" expanded="true" />
+                <element signature="e#491#492#0" expanded="true" />
+                <element signature="e#532#533#0" expanded="true" />
+                <element signature="e#556#557#0" expanded="true" />
+                <element signature="e#598#599#0" expanded="true" />
+                <element signature="e#622#623#0" expanded="true" />
+                <element signature="e#670#671#0" expanded="true" />
+                <element signature="e#697#698#0" expanded="true" />
+                <element signature="e#743#744#0" expanded="true" />
+                <element signature="e#770#771#0" expanded="true" />
+                <element signature="e#810#811#0" expanded="true" />
+                <element signature="e#837#838#0" expanded="true" />
+                <element signature="e#878#879#0" expanded="true" />
+                <element signature="e#902#903#0" expanded="true" />
+                <element signature="e#944#945#0" expanded="true" />
+                <element signature="e#971#972#0" expanded="true" />
+                <element signature="e#1019#1020#0" expanded="true" />
+                <element signature="e#1043#1044#0" expanded="true" />
+                <element signature="e#1093#1094#0" expanded="true" />
+                <element signature="e#1120#1121#0" expanded="true" />
+                <element signature="e#1166#1167#0" expanded="true" />
+                <element signature="e#1193#1194#0" expanded="true" />
+                <element signature="e#1240#1241#0" expanded="true" />
+                <element signature="e#1267#1268#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,8 +189,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parser/src/main/java/RPCClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
-              <caret line="76" column="57" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
+            <state relative-caret-position="392">
+              <caret line="40" column="132" selection-start-line="40" selection-start-column="121" selection-end-line="40" selection-end-column="132" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -155,6 +206,12 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>system.o</find>
+      <find>params</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -337,9 +394,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/parser" value="6160405544000" />
+        <entry key="$PROJECT_DIR$/parser" value="6160510057000" />
         <entry key="$PROJECT_DIR$/parser/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/parser/build.gradle" value="2752162947" />
+        <entry key="$PROJECT_DIR$/parser/build.gradle" value="3940274219" />
         <entry key="$PROJECT_DIR$/parser/gradle/wrapper/gradle-wrapper.properties" value="2007532874" />
         <entry key="$PROJECT_DIR$/parser/settings.gradle" value="394721627" />
       </map>
@@ -462,15 +519,16 @@
         <option value="$PROJECT_DIR$/config.properties" />
         <option value="$PROJECT_DIR$/parser/src/main/java/RPCClient.java" />
         <option value="$PROJECT_DIR$/parser/build.gradle" />
+        <option value="$PROJECT_DIR$/parser/src/main/java/Block.java" />
         <option value="$PROJECT_DIR$/parser/src/main/java/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2430" />
-    <option name="y" value="678" />
-    <option name="width" value="1910" />
-    <option name="height" value="789" />
+    <option name="x" value="1920" />
+    <option name="y" value="25" />
+    <option name="width" value="1920" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -519,7 +577,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540172046786" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540221933894" />
     <property name="jdk.selected.JAVA_MODULE" value="10" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -585,7 +643,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32037815" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32" />
       <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39891893" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -614,33 +672,39 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/parser/src/main/java/Main.java</url>
-          <line>53</line>
+          <line>107</line>
           <properties />
-          <option name="timeStamp" value="10" />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/parser/src/main/java/RPCClient.java</url>
+          <line>90</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/parser/src/main/java/RPCClient.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/parser/src/main/java/Main.java</url>
-          <line>52</line>
+          <line>89</line>
           <properties />
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/parser/src/main/java/Main.java</url>
-          <line>46</line>
+          <line>68</line>
           <properties />
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/parser/src/main/java/Main.java</url>
-          <line>38</line>
+          <line>49</line>
           <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/parser/src/main/java/Main.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -648,47 +712,52 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>obj1</expression-string>
+        <expression-string>in.get(0).</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>obj1.get(&quot;nextblockobject&quot;)</expression-string>
+        <expression-string>in.get(0).coinbase()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>String.valueOf(obj1.get(&quot;nextblockobject&quot;))</expression-string>
+        <expression-string>in.get(0)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>obj1.get(&quot;nextblockhash&quot; )</expression-string>
+        <expression-string>in.get(0).scriptSig()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>String a = obj.get(&quot;result&quot;).get(&quot;nextblockhash&quot;);</expression-string>
+        <expression-string>in.get(0).getTransaction()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>String a = obj.get(&quot;result&quot;).get(&quot;nextblockhash&quot;)</expression-string>
+        <expression-string>out.get(0).scriptPubKey().addresses()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>obj.get(&quot;result&quot;).get(&quot;nextblockhash&quot;)</expression-string>
+        <expression-string>(List&lt;BitcoindRpcClient.RawTransaction.Out&gt;) Tx.vOut()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>obj.get(&quot;result&quot;).get(&quot;tx&quot;)</expression-string>
+        <expression-string>Tx.vOut()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>obj.get(&quot;result&quot;)</expression-string>
+        <expression-string>block.nextHash()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>bitcoin.getRawTransaction(TxHash)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -776,30 +845,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/util/HashMap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="2251" column="17" selection-start-line="2251" selection-start-column="17" selection-end-line="2251" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/15bba08e3a239d54b68209c001f9c911559d2fed/json-simple-1.1.1-sources.jar!/org/json/simple/JSONObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser/src/main/java/RPCClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="76" column="57" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parser/src/main/java/config/Config.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="47">
@@ -810,20 +855,121 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/15bba08e3a239d54b68209c001f9c911559d2fed/json-simple-1.1.1-sources.jar!/org/json/simple/JSONObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/util/HashMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="144" column="13" selection-start-line="144" selection-start-column="13" selection-end-line="144" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/net/URL.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/src/main/java/RPCClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="40" column="132" selection-start-line="40" selection-start-column="121" selection-end-line="40" selection-end-column="132" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/parser/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="72" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
+        <state relative-caret-position="360">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/wf.bitcoin/JavaBitcoindRpcClient/0.9.0/b495de7b24e309ea2db4d2655498d39a725c092b/JavaBitcoindRpcClient-0.9.0-sources.jar!/wf/bitcoin/javabitcoindrpcclient/MapWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+          <folding>
+            <element signature="e#1377#1378#0" expanded="true" />
+            <element signature="e#1403#1404#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/src/main/java/Block.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="49" column="8" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
+            <element signature="e#1043#1044#0" expanded="true" />
+            <element signature="e#1093#1094#0" expanded="true" />
+            <element signature="e#1120#1121#0" expanded="true" />
+            <element signature="e#1166#1167#0" expanded="true" />
+            <element signature="e#1193#1194#0" expanded="true" />
+            <element signature="e#1240#1241#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/wf.bitcoin/JavaBitcoindRpcClient/0.9.0/b495de7b24e309ea2db4d2655498d39a725c092b/JavaBitcoindRpcClient-0.9.0-sources.jar!/wf/bitcoin/javabitcoindrpcclient/BitcoinJSONRPCClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="657" selection-start-line="657" selection-end-line="657" />
+          <folding>
+            <element signature="e#4771#4772#0" expanded="true" />
+            <element signature="e#4814#4815#0" expanded="true" />
+            <element signature="e#10950#10951#0" expanded="true" />
+            <element signature="e#10972#10973#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/wf.bitcoin/JavaBitcoindRpcClient/0.9.0/b495de7b24e309ea2db4d2655498d39a725c092b/JavaBitcoindRpcClient-0.9.0-sources.jar!/wf/bitcoin/javabitcoindrpcclient/BitcoindRpcClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parser/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="44" column="12" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
+        <state relative-caret-position="330">
+          <caret line="49" column="55" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#516#524#0" expanded="true" />
+            <element signature="e#560#568#0" expanded="true" />
           </folding>
         </state>
       </provider>

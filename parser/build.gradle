@@ -23,10 +23,14 @@ dependencies {
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
 
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.7'
+//    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.7'
 
 //    compile 'com.google.code.gson:gson:2.8.5'
     compile 'org.bitcoinj:bitcoinj-core:0.14.7'
+// https://mvnrepository.com/artifact/wf.bitcoin/JavaBitcoindRpcClient
+    compile group: 'wf.bitcoin', name: 'JavaBitcoindRpcClient', version: '0.9.0'
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.7'
 
 
 }
