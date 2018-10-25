@@ -59,20 +59,37 @@ public class Main {
             properties.setProperty("lastBlock", blockHash);
             writeToProp("last.properties",properties);
 
-            ArrayList<Integer> toRemove = new ArrayList<Integer>();
+            ArrayList<BlockParser> toRemove = new ArrayList<BlockParser>();
+            boolean flag= true;
 
-            for (BlockParser i : parsers){
-                if(!i.isAlive()){
-                    toRemove.add(parsers.indexOf(i));
+            while(parsers.size() == threadCount) {
+                toRemove.clear();
+                for (BlockParser i : parsers) {
+                    if (!i.isAlive()) {
+                        toRemove.add(i);
+                    }
                 }
-            }
-            for(Integer x : toRemove){
-                parsers.remove(x);
-            }
+                for (BlockParser x : toRemove) {
+                    parsers.remove(x);
+                }
 
-            if(parsers.size() >= threadCount){
-                while(!parsers.isEmpty()){
+
+                if(parsers.size()<threadCount){
+                    break;
+                }
+                try {
+                    Thread.sleep(60);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            Main.gc();
+
+            /*if(parsers.size() >= threadCount){
+                while(parsers.size() >= threadCount){
                     try {
+
                         BlockParser p =parsers.remove(parsers.size()-1);
                         p.join();
 
@@ -81,7 +98,7 @@ public class Main {
                     }
                 }
                 Main.gc();
-            }
+            }*/
 
             parsers.add(0, new BlockParser(RPCclient, block, blockHash));
             parsers.get(0).start();
