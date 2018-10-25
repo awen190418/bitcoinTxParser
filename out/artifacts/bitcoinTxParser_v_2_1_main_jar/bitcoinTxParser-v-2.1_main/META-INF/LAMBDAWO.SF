@@ -1,0 +1,62 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: 7iFS31mNdWb6ymT2DPv37aETMQY=
+Created-By: 1.6.0_45 (Apple Inc.)
+SHA1-Digest-Manifest: Lh6q+loDVKpUM6NSip7vPPjvod0=
+
+Name: com/lambdaworks/jni/Platform$OS.class
+SHA1-Digest: QS1fPZ5OAaBu6Bj/muwwywqfEmk=
+
+Name: com/lambdaworks/jni/JarLibraryLoader$1.class
+SHA1-Digest: uARRid+WAyteddPwDr8vv/kPDus=
+
+Name: com/lambdaworks/jni/LibraryLoaders.class
+SHA1-Digest: yYdYuqBTInA5kj30pGVNL0QOfc4=
+
+Name: com/lambdaworks/jni/JarLibraryLoader.class
+SHA1-Digest: RE9/0blBq0uHzVC1KKoXVXLaDws=
+
+Name: com/lambdaworks/jni/SysLibraryLoader.class
+SHA1-Digest: YtDRNwXfQK+0XJy85+QpVNWCbgI=
+
+Name: com/lambdaworks/jni/LibraryLoader.class
+SHA1-Digest: 19PaLhQbUpTFwbY3lFDTecBvKB4=
+
+Name: lib/x86_64/linux/libscrypt.so
+SHA1-Digest: HEkwQmW24AU4tGxsP2FuNG0k+xc=
+
+Name: com/lambdaworks/jni/UnsupportedPlatformException.class
+SHA1-Digest: fPhPl3whUD3DsUVSOW+XYl7PoTg=
+
+Name: com/lambdaworks/crypto/SCryptUtil.class
+SHA1-Digest: ae3QAP0I+k7pCunHiXN+vTx/IhY=
+
+Name: com/lambdaworks/crypto/PBKDF.class
+SHA1-Digest: rrnp2WYUjV80A6OtUkdP87FbTSs=
+
+Name: com/lambdaworks/jni/NilLibraryLoader.class
+SHA1-Digest: WurVxUA9XO+Fj9nzE34J2pamYbo=
+
+Name: lib/x86_64/freebsd/libscrypt.so
+SHA1-Digest: O5txgnGJGKO1X2vbqdvYtR+kXvg=
+
+Name: META-INF/maven/com.lambdaworks/scrypt/pom.xml
+SHA1-Digest: T31NOMRwIpuKzYt9G3uXGlFwUTo=
+
+Name: lib/x86_64/darwin/libscrypt.dylib
+SHA1-Digest: eavi4KsXmIGqexlfSMxydZgbXVg=
+
+Name: com/lambdaworks/crypto/SCrypt.class
+SHA1-Digest: EQ9ap1xU6SFQlhNQaJHkfMqPHRo=
+
+Name: com/lambdaworks/codec/Base64.class
+SHA1-Digest: 7/fUcYZygKTOJ+DMut68HPANduU=
+
+Name: META-INF/maven/com.lambdaworks/scrypt/pom.properties
+SHA1-Digest: q/xyfkOqi4XcvB+HPPZ/h8UW81Q=
+
+Name: com/lambdaworks/jni/Platform$Arch.class
+SHA1-Digest: bS1jzQfHsEBKX35ClBR96kzAotg=
+
+Name: com/lambdaworks/jni/Platform.class
+SHA1-Digest: cMcns/Mk5iGw0IN1+4jue1q81wI=
+

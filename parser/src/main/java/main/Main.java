@@ -59,6 +59,16 @@ public class Main {
             properties.setProperty("lastBlock", blockHash);
             writeToProp("last.properties",properties);
 
+            ArrayList<Integer> toRemove = new ArrayList<Integer>();
+
+            for (BlockParser i : parsers){
+                if(!i.isAlive()){
+                    toRemove.add(parsers.indexOf(i));
+                }
+            }
+            for(Integer x : toRemove){
+                parsers.remove(x);
+            }
 
             if(parsers.size() >= threadCount){
                 while(!parsers.isEmpty()){

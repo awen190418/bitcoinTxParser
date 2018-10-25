@@ -6,26 +6,18 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/parser/src/main/java/main/Main.java" line="78" />
+    <bookmark url="file://$PROJECT_DIR$/parser/src/main/java/main/Main.java" line="88" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb5b4327-edd9-4885-914f-d9742115f7bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/parser/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser/src/main/java/databse/Signature/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser/src/main/java/databse/connection/DBConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser/src/main/java/databse/connection/DbPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser/src/main/java/databse/implementation/DatabaseAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/bitcoinTxParser-v-2.1_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/bitcoinTxParser-v-2.1_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/bitcoinTxParser-v-2.1_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/bitcoinTxParser-v-2.1_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/parser/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/parser/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/parser/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/src/main/java/BlockParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/parser/src/main/java/main/BlockParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/parser/src/main/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/src/main/java/RPCClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/last.properties" beforeDir="false" afterPath="$PROJECT_DIR$/last.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/src/main/java/databse/implementation/DatabaseAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/parser/src/main/java/databse/implementation/DatabaseAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/src/main/java/main/BlockParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/parser/src/main/java/main/BlockParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/parser/src/main/java/main/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/parser/.gradle/" />
     <ignored path="$PROJECT_DIR$/parser/build/" />
@@ -110,14 +102,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3862" />
-          <entry key="properties" value="110" />
+          <entry key="java" value="4042" />
+          <entry key="properties" value="139" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3862" />
-          <entry key="Properties" value="110" />
+          <entry key="JAVA" value="4042" />
+          <entry key="Properties" value="139" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -147,7 +139,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parser/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
+            <state relative-caret-position="398">
               <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
@@ -156,20 +148,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="119" column="5" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
+            <state relative-caret-position="-56">
+              <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2232#2241#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+            <state relative-caret-position="527">
+              <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -213,8 +206,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parser/src/main/java/databse/implementation/DatabaseAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1088">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="295">
+              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -222,11 +215,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/BlockParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="115" column="44" selection-start-line="115" selection-start-column="44" selection-end-line="115" selection-end-column="44" />
+            <state relative-caret-position="101">
+              <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -238,7 +231,7 @@
         <entry file="file://$PROJECT_DIR$/last.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="74" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="74" />
+              <caret line="2" column="74" selection-start-line="2" selection-start-column="74" selection-end-line="2" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -576,11 +569,12 @@
         <option value="$PROJECT_DIR$/parser/build.gradle" />
         <option value="$PROJECT_DIR$/parser/src/main/java/databse/connection/DBConnection.java" />
         <option value="$PROJECT_DIR$/parser/src/main/java/databse/Signature/Database.java" />
-        <option value="$PROJECT_DIR$/parser/src/main/java/main/BlockParser.java" />
+        <option value="$PROJECT_DIR$/parser/src/main/java/databse/connection/DbPool.java" />
+        <option value="$PROJECT_DIR$/last.properties" />
         <option value="$PROJECT_DIR$/parser/src/main/java/databse/implementation/DatabaseAPI.java" />
         <option value="$PROJECT_DIR$/parser/src/main/java/main/Main.java" />
-        <option value="$PROJECT_DIR$/parser/src/main/java/databse/connection/DbPool.java" />
         <option value="$PROJECT_DIR$/config.properties" />
+        <option value="$PROJECT_DIR$/parser/src/main/java/main/BlockParser.java" />
       </list>
     </option>
   </component>
@@ -590,11 +584,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-584" />
-    <option name="y" value="-21" />
-    <option name="width" value="1932" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1678" />
+    <option name="height" value="1008" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -683,24 +677,24 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540309124933" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540442919339" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="10" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/last.properties" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\anish\Documents\NetBeansProjects\bitcoinTxParser-v-2.1\parser\src\main\java\databse" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/parser" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="config" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/parser" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\anish\Documents\NetBeansProjects\bitcoinTxParser-v-2.1\parser\src\main\java\databse" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -742,18 +736,18 @@
       <workItem from="1540264475369" duration="280000" />
       <workItem from="1540264804316" duration="20975000" />
       <workItem from="1540295377819" duration="6984000" />
-      <workItem from="1540303490217" duration="3348000" />
+      <workItem from="1540303490217" duration="11058000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31587000" />
+    <option name="totallyTimeSpent" value="39297000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1" y="1" width="1678" height="1008" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18017058" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20889987" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -762,14 +756,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3033586" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49814585" visible="true" weight="0.32" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.42145178" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32827735" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.3033586" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49876392" weight="0.328" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5018541" side_tool="true" visible="true" weight="0.32" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32936078" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.33044422" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -975,37 +969,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/RPCClient.java" />
-    <entry file="file://$PROJECT_DIR$/parser/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parser/src/main/java/databse/connection/DBConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/BlockParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="115" column="44" selection-start-line="115" selection-start-column="44" selection-end-line="115" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="119" column="5" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1025,13 +992,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parser/src/main/java/databse/implementation/DatabaseAPI.java">
+    <entry file="file://$PROJECT_DIR$/parser/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1088">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="398">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
@@ -1048,14 +1012,45 @@
     <entry file="file://$PROJECT_DIR$/last.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="74" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="74" />
+          <caret line="2" column="74" selection-start-line="2" selection-start-column="74" selection-end-line="2" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/src/main/java/databse/implementation/DatabaseAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        <state relative-caret-position="527">
+          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2232#2241#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/BlockParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1070,6 +1065,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

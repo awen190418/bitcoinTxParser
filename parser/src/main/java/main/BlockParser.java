@@ -112,11 +112,11 @@ public class BlockParser extends Thread  {
                     }
 //                    public boolean Write(String blockHash, String receivedTxId, int rID, String receivedDate, String spendTxId, String spentTxId, int sID, String spentDate,String address , double value, double holdDuration) throws SQLException {
 
-                    try {
+                   /* try {
                         Main.dbPool.getConnection().Write(block.hash(),String.valueOf(block.height()),soruceTXId,Integer.valueOf(sourceVoutId),new java.sql.Date(receivedDate.getTime()),spentTxId,Integer.valueOf(spentVinIndex),new java.sql.Date(spentDate.getTime()),bitcoinAddress,value,diff);
                     } catch (SQLException e) {
                         e.printStackTrace();
-                    }
+                    }*/
                     i++;
                 }
                 //input parsing ends

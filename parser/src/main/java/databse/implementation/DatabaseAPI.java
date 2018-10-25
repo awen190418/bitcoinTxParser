@@ -72,7 +72,7 @@ public class DatabaseAPI implements Database {
     public boolean Write(String blockHash,String blockHeight, String receivedTxId, int rID, Date receivedDate, String spentTxId, int sID, Date spentDate, String address , double value, double holdDuration) throws SQLException {
         try {
             PreparedStatement preparedStatement;
-            preparedStatement=connection.getConnect().prepareStatement("INSERT INTO main.transaction(blockID, receivedTxHash, rID,receivedDate, spentTxHash,sID,spentDate, address,bitcoin,holdedTime,blockNo ) values(?,?,?,?,?,?,?,?,?,?,?)");
+            preparedStatement=connection.getConnect().prepareStatement("INSERT INTO main.transaction3(blockID, receivedTxHash, rID,receivedDate, spentTxHash,sID,spentDate, address,bitcoin,holdedTime,blockNo ) values(?,?,?,?,?,?,?,?,?,?,?)");
 
 
             preparedStatement.setString(1, blockHash);
