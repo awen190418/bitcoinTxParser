@@ -3,18 +3,24 @@ package databse.implementation;
 
 import databse.Signature.Database;
 import databse.connection.DBConnection;
+import main.Main;
 
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 
-public class DatabaseAPI implements Database {
+public class DatabaseAPIBCK implements Database {
     DBConnection connection;
+    PreparedStatement preparedStatement;
+    int batchSize;
+    int counter;
 
-
-    public DatabaseAPI() throws SQLException, ClassNotFoundException {
+    public DatabaseAPIBCK() throws SQLException, ClassNotFoundException {
         connection = new DBConnection();
+        preparedStatement=connection.getConnect().prepareStatement("INSERT INTO main.transaction4(blockID, receivedTxHash, rID,receivedDate, spentTxHash,sID,spentDate, address,bitcoin,holdedTime,blockNo ) values(?,?,?,?,?,?,?,?,?,?,?)");
+        batchSize= Integer.valueOf(Main.properties.getProperty("batchSize"));
+        counter=0;
     }
 
     @Override
@@ -71,27 +77,30 @@ public class DatabaseAPI implements Database {
     @Override
     public boolean Write(String blockHash,String blockHeight, String receivedTxId, int rID, Date receivedDate, String spentTxId, int sID, Date spentDate, String address , double value, double holdDuration) throws SQLException {
         try {
-            PreparedStatement preparedStatement;
-            preparedStatement=connection.getConnect().prepareStatement("INSERT INTO main.transaction4(blockID, receivedTxHash, rID,receivedDate, spentTxHash,sID,spentDate, address,bitcoin,holdedTime,blockNo ) values(?,?,?,?,?,?,?,?,?,?,?)");
+            if(counter<batchSize){
+                preparedStatement.setString(1, blockHash);
 
+                preparedStatement.setString(2, receivedTxId);
+                preparedStatement.setInt(3, rID);
+                preparedStatement.setDate(4, receivedDate);
 
-            preparedStatement.setString(1, blockHash);
+                preparedStatement.setString(5, spentTxId);
+                preparedStatement.setInt(6, sID);
+                preparedStatement.setDate(7, spentDate);
 
-            preparedStatement.setString(2, receivedTxId);
-            preparedStatement.setInt(3, rID);
-            preparedStatement.setDate(4, receivedDate);
+                preparedStatement.setString(8, address);
+                preparedStatement.setDouble(9, value);
+                preparedStatement.setDouble(10, holdDuration);
+                preparedStatement.setInt(11, Integer.valueOf(blockHeight));
+                preparedStatement.addBatch();
+                counter++;
+            }
+            else{
+                reset();
+                Write(blockHash,blockHeight,receivedTxId,rID,receivedDate,spentTxId,sID,spentDate,address,value,holdDuration);
+            }
 
-            preparedStatement.setString(5, spentTxId);
-            preparedStatement.setInt(6, sID);
-            preparedStatement.setDate(7, spentDate);
-
-            preparedStatement.setString(8, address);
-            preparedStatement.setDouble(9, value);
-            preparedStatement.setDouble(10, holdDuration);
-            preparedStatement.setInt(11, Integer.valueOf(blockHeight));
-
-            preparedStatement.executeUpdate();
-            preparedStatement.close();
+//            preparedStatement.close();
 
         } catch (SQLException e) {
 
@@ -99,7 +108,20 @@ public class DatabaseAPI implements Database {
         }
         return true;
     }
+    public void reset(){
+        counter=0;
+        try {
+            preparedStatement.executeBatch();
+//            preparedStatement.close();
+//            connection.close();
+            counter=0;
 
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+    }
     public void closeConnection(){
         connection.close();
     }
