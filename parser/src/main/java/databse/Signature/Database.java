@@ -1,7 +1,10 @@
 package databse.Signature;
 
+import main.DbRow;
+
 import java.sql.Date;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public interface Database {
 
@@ -9,6 +12,6 @@ public interface Database {
     boolean WriteOutput(String hash_AB, String TxHash_A, String BTCAddress_B, Double value, long date) throws SQLException;
 
 
-   boolean Write(String blockHash,String blockHeight, String receivedTxId, int rID, Date receivedDate, String spentTxId, int sID, Date spentDate, String address , double value, double holdDuration) throws SQLException;
+    boolean Write(ArrayList<DbRow> rowBatch)throws SQLException;
 
 }

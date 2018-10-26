@@ -10,15 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb5b4327-edd9-4885-914f-d9742115f7bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/parser/src/main/java/databse/implementation/DatabaseAPIBCK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser/src/main/java/main/BlockParserBCK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser/src/main/java/main/TxParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/main/DbRow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/last.properties" beforeDir="false" afterPath="$PROJECT_DIR$/last.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/src/main/java/databse/Signature/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/parser/src/main/java/databse/Signature/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parser/src/main/java/databse/implementation/DatabaseAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/parser/src/main/java/databse/implementation/DatabaseAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/src/main/java/databse/implementation/DatabaseAPIBCK.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/parser/src/main/java/main/BlockParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/parser/src/main/java/main/BlockParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/src/main/java/main/BlockParserBCK.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/parser/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/parser/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/src/main/java/main/TxParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/parser/src/main/java/main/TxParser.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/parser/.gradle/" />
     <ignored path="$PROJECT_DIR$/parser/build/" />
@@ -62,7 +64,7 @@
           <entry key="class" value="4" />
           <entry key="gitignore" value="1" />
           <entry key="gradle" value="3" />
-          <entry key="java" value="14" />
+          <entry key="java" value="16" />
           <entry key="properties" value="2" />
         </counts>
       </usages-collector>
@@ -70,7 +72,7 @@
         <counts>
           <entry key="CLASS" value="4" />
           <entry key="Groovy" value="3" />
-          <entry key="JAVA" value="14" />
+          <entry key="JAVA" value="16" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="2" />
         </counts>
@@ -79,16 +81,16 @@
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="gradle" value="32" />
-          <entry key="java" value="4651" />
-          <entry key="properties" value="258" />
+          <entry key="java" value="5215" />
+          <entry key="properties" value="263" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="32" />
-          <entry key="JAVA" value="4651" />
+          <entry key="JAVA" value="5215" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="258" />
+          <entry key="Properties" value="263" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -143,8 +145,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+            <state relative-caret-position="45">
+              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -153,7 +155,7 @@
         <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2236#2249#0" expanded="true" />
@@ -165,8 +167,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/BlockParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+            <state relative-caret-position="128">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,22 +177,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/BlockParserBCK.java">
+        <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/TxParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="28" column="10" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="28" selection-end-column="10" />
+            <state relative-caret-position="398">
+              <caret line="94" column="13" selection-start-line="90" selection-start-column="7" selection-end-line="94" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/TxParser.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/DbRow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="324">
+              <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -198,8 +200,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parser/src/main/java/databse/connection/DbPool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="15" column="17" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="17" />
+            <state relative-caret-position="468">
+              <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -207,45 +209,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parser/src/main/java/databse/implementation/DatabaseAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="85" column="52" lean-forward="true" selection-start-line="85" selection-start-column="52" selection-end-line="85" selection-end-column="52" />
+            <state relative-caret-position="416">
+              <caret line="105" column="31" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="31" />
               <folding>
-                <element signature="e#3959#3960#0" expanded="true" />
-                <element signature="e#3993#3994#0" expanded="true" />
+                <element signature="e#3665#3666#0" expanded="true" />
+                <element signature="e#3699#3700#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parser/src/main/java/databse/implementation/DatabaseAPIBCK.java">
+        <entry file="file://$PROJECT_DIR$/parser/src/main/java/databse/Signature/Database.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="21" column="17" selection-start-line="21" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parser/src/main/java/databse/connection/DBConnection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+            <state relative-caret-position="252">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/wf.bitcoin/JavaBitcoindRpcClient/0.9.0/b495de7b24e309ea2db4d2655498d39a725c092b/JavaBitcoindRpcClient-0.9.0-sources.jar!/wf/bitcoin/javabitcoindrpcclient/BitcoindRpcClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="257" column="21" selection-start-line="257" selection-start-column="21" selection-end-line="257" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -270,6 +254,8 @@
       <find>Block N</find>
       <find>DbP</find>
       <find>DbPool</find>
+      <find>new TxParser</find>
+      <find>closeConnection</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -581,16 +567,17 @@
         <option value="$PROJECT_DIR$/parser/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/parser/build.gradle" />
         <option value="$PROJECT_DIR$/parser/src/main/java/databse/connection/DBConnection.java" />
-        <option value="$PROJECT_DIR$/parser/src/main/java/databse/Signature/Database.java" />
         <option value="$PROJECT_DIR$/last.properties" />
         <option value="$PROJECT_DIR$/parser/src/main/java/databse/connection/DbPool.java" />
+        <option value="$PROJECT_DIR$/parser/src/main/java/main/DbRow.java" />
+        <option value="$PROJECT_DIR$/parser/src/main/java/databse/Signature/Database.java" />
         <option value="$PROJECT_DIR$/parser/src/main/java/databse/implementation/DatabaseAPIBCK.java" />
         <option value="$PROJECT_DIR$/parser/src/main/java/main/BlockParserBCK.java" />
-        <option value="$PROJECT_DIR$/parser/src/main/java/main/BlockParser.java" />
-        <option value="$PROJECT_DIR$/parser/src/main/java/main/Main.java" />
-        <option value="$PROJECT_DIR$/config.properties" />
         <option value="$PROJECT_DIR$/parser/src/main/java/databse/implementation/DatabaseAPI.java" />
+        <option value="$PROJECT_DIR$/parser/src/main/java/main/Main.java" />
+        <option value="$PROJECT_DIR$/parser/src/main/java/main/BlockParser.java" />
         <option value="$PROJECT_DIR$/parser/src/main/java/main/TxParser.java" />
+        <option value="$PROJECT_DIR$/config.properties" />
       </list>
     </option>
   </component>
@@ -689,7 +676,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540518962472" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540521794506" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="10" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/last.properties" />
@@ -759,9 +746,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25506938" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25506938" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -770,16 +756,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48986125" visible="true" weight="0.31932774" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48772678" visible="true" weight="0.31932774" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49839914" weight="0.42121848" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49573106" weight="0.3277311" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.51013875" side_tool="true" visible="true" weight="0.31932774" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49466383" weight="0.3277311" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5122732" side_tool="true" visible="true" weight="0.31932774" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49786553" weight="0.32983193" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4941302" weight="0.32983193" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32977587" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -963,6 +949,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="47">
           <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -989,13 +978,6 @@
     <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/RPCClient.java" />
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser/src/main/java/databse/Signature/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="53" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parser/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
@@ -1035,10 +1017,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parser/src/main/java/databse/connection/DbPool.java">
+    <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/DbRow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="324">
+          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/src/main/java/databse/Signature/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1047,15 +1036,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/parser/src/main/java/databse/implementation/DatabaseAPIBCK.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="17" selection-start-line="21" selection-end-line="22" />
+        <state relative-caret-position="-990">
+          <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/BlockParserBCK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2236#2249#0" expanded="true" />
@@ -1063,47 +1059,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.properties">
+    <entry file="file://$PROJECT_DIR$/parser/src/main/java/databse/connection/DbPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/BlockParserBCK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="28" column="10" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="28" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/BlockParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+        <state relative-caret-position="468">
+          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parser/src/main/java/databse/implementation/DatabaseAPI.java">
+    <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/BlockParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="85" column="52" lean-forward="true" selection-start-line="85" selection-start-column="52" selection-end-line="85" selection-end-column="52" />
+        <state relative-caret-position="128">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
-            <element signature="e#3959#3960#0" expanded="true" />
-            <element signature="e#3993#3994#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parser/src/main/java/main/TxParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
+        <state relative-caret-position="398">
+          <caret line="94" column="13" selection-start-line="90" selection-start-column="7" selection-end-line="94" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/src/main/java/databse/implementation/DatabaseAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="105" column="31" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="31" />
+          <folding>
+            <element signature="e#3665#3666#0" expanded="true" />
+            <element signature="e#3699#3700#0" expanded="true" />
           </folding>
         </state>
       </provider>

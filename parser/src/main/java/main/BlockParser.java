@@ -70,6 +70,15 @@ public class BlockParser extends Thread  {
                     e.printStackTrace();
                 }
             }
+
+//            try {
+//                Main.dbPool.getConnection().Write(this.rowList);
+//                this.rowList.clear();
+//            } catch (SQLException e) {
+//                e.printStackTrace();
+//            }
+
+
         }
     }
 

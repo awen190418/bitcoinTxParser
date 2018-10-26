@@ -23,7 +23,7 @@ public class Main {
 
         Main.properties = c.getConfig();
 
-        Main.dbPool= new DbPool(2);
+        Main.dbPool= new DbPool(10);
 
 
         int port = Integer.valueOf(Main.properties.getProperty("rpcPort"));
