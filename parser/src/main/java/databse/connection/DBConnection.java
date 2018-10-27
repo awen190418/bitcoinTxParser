@@ -25,7 +25,8 @@ public class DBConnection {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             // Setup the connection with the DB
-            connect = DriverManager.getConnection(prop.getProperty("URL")+"/"+prop.getProperty("db")+"?user="+prop.getProperty("user")+"&password="+prop.getProperty("password"));
+//            connect = DriverManager.getConnection(prop.getProperty("URL")+"/"+prop.getProperty("db")+"?user="+prop.getProperty("user")+"&password="+prop.getProperty("password"));
+            connect = DriverManager.getConnection(prop.getProperty("URL")+":3306/"+prop.getProperty("db")+"?useUnicode=true&characterEncoding=UTF-8" + "&rewriteBatchedStatements=true" ,prop.getProperty("user"),prop.getProperty("password"));
 
         } catch (ClassNotFoundException | SQLException e) {
             throw e;

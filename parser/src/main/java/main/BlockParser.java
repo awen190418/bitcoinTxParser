@@ -46,7 +46,13 @@ public class BlockParser extends Thread  {
         ArrayList<TxParser> tParser = new ArrayList<>();
 
         if(TxList.size()>1) {
+            boolean flag=true;
             for (String TxHash : TxList.subList(1, TxList.size())) {
+
+//                System.out.println("\nTx: "+ TxList.indexOf(TxHash)+
+//                        "\nTx hash: "+ TxHash
+//                );
+
                 Tx = RPCclient.getRawTransaction(TxHash);
 
                 if(Main.properties.getProperty("debug").equals("1")) {
@@ -59,8 +65,42 @@ public class BlockParser extends Thread  {
                 if(index!=0){
                     index=index-1;
                 }
+
                 tParser.add(index,new TxParser(block,in,RPCclient,TxHash,TxList));
                 tParser.get(index).start();
+              /*  try {
+                    tParser.get(index).join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }*/
+
+              ArrayList<TxParser> tmp= new ArrayList<>();
+
+
+              while(tParser.size()>Integer.valueOf(Main.properties.getProperty("noOfCPUCore"))  && flag){
+                  for(TxParser aa : tParser){
+                      if(!aa.isAlive()){
+                          tmp.add(aa);
+                          flag=false;
+//                          System.out.println("Completed: "+tParser.indexOf(aa));
+                          break;
+                      }
+                  }
+                  try {
+                      Thread.sleep(80);
+                  } catch (InterruptedException e) {
+
+                        e.printStackTrace();
+                  }
+              }
+                flag=true;
+              for(TxParser xxx : tmp){
+                  tParser.remove(xxx);
+              }
+
+
+
+
 
             }
             for(TxParser p : tParser){
